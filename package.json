@@ -7,5 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "yanming",
-  "license": "private"
+  "license": "private",
+  "dependencies": {
+    "node-mitmproxy": "^3.1.0",
+    "through2": "^3.0.1"
+  }
 }

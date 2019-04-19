@@ -1,0 +1,52 @@
+无头浏览器 
+http://zombie.js.org/
+
+https://github.com/wuchangming/node-mitmproxy
+
+
+微信公众号文章爬取之：微信自动化
+https://www.chenwenguan.com/wechat-browse-automation/
+
+https://zhuanlan.zhihu.com/p/24302048
+
+
+
+测试url:
+
+最新的文章列表
+http://mp.weixin.qq.com/mp/homepage?__biz=MzA3NTcwOTIwNg==&hid=1&sn=743e03c01bd4e9a17526f44e8cb76d59&scene=18&devicetype=android-27&version=2700033c&lang=zh_CN&nettype=WIFI&ascene=7&session_us=gh_1736aaa9e95c&pass_ticket=1H3pXeR8ggME4hbMqIOku9plBDwkXv2HQhjdtl%2BCsQ4%3D&wx_header=1 
+
+
+https://mp.weixin.qq.com/mp/homepage?__biz=MTI0MDU3NDYwMQ==&hid=5&sn=80476d2a141cba2fa8c45ad8b1b7e3ae&scene=18&devicetype=android-27&version=2700033c&lang=zh_CN&nettype=WIFI&ascene=7&session_us=wxid_pzhf43hmwizd11&pass_ticket=1H3pXeR8ggME4hbMqIOku9plBDwkXv2HQhjdtl%2BCsQ4%3D&wx_header=1&begin=0&count=100
+
+     
+无需 session 就可以读取文档内容
+https://mp.weixin.qq.com/s?__biz=MzA3NTcwOTIwNg==&mid=2655842757&idx=1&sn=769dfbe81e90e343bce376d0ebacbd2e&scene=19&ascene=7&devicetype=android-27&version=2700033c&nettype=WIFI&abtest_cookie=BQABAAgACgALABIAEwAGAJ%2BGHgAjlx4AX5keAMWZHgDZmR4A3JkeAAAA&lang=zh_CN&pass_ticket=1H3pXeR8ggME4hbMqIOku9plBDwkXv2HQhjdtl%2BCsQ4%3D&wx_header=1
+
+返回 json, has_more:1 表示还有更多begin:?, count:5
+Accept: application/json
+
+有参数 &action=appmsg_list&f=json 表示获取内容列表, 否则显示html模板()
+
+header: cookie/'q-ua2'/'q-guid'/'q-auth'
+
+
+https://mp.weixin.qq.com/mp/getmasssendmsg?__biz=MzA3NTcwOTIwNg==
+
+__biz可以认为是微信公众平台对外公布的公众帐号的唯一id
+mid是图文消息id
+idx是发布的第几条消息(1就代表是头条位置消息)
+sn是一个随机加密串(对于一篇图文消息是唯一的，如果你想问这个sn的生成规则是什么或者怎么破解，你基本上只能从微信公众平台开发团队才能得到答案)熬伪装
+
+
+http://mp.weixin.qq.com/mp/getmasssendmsg?__biz=
+https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=
+
+可以提取历史消息, 需要 session, action 参数是类型
+
+主页介绍:
+http://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MTI0MDU3NDYwMQ==&subscene=0#wechat_redirect
+
+列表:
+https://mp.weixin.qq.com/mp/profile_ext?action=getmsg&__biz=MTI0MDU3NDYwMQ==&f=json&offset=30&count=10&is_ok=1&scene=&uin=777&key=777&pass_ticket=1H3pXeR8ggME4hbMqIOku9plBDwkXv2HQhjdtl+CsQ4=&wxtoken=&appmsg_token=1005_GxjZ8DF%2BRsGVNjAuTYRqUEbkGVWlLGnmwLXtqA~~&x5=1&f=json
+
