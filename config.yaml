@@ -1,0 +1,16 @@
+# 代理监听端口, 在手机上设置为该端口
+proxy_port: 1234
+
+# 管理画面端口, 在 PC 浏览器上打开
+http_port: 80
+
+# 登录管理画面的密钥
+password: 1234
+
+# mysql 配置, 初始化脚本在 sql 目录中
+mysql:
+  host: 'localhost'
+  database: 'wxmsg'
+  user: 'root'
+  password: 'root'
+  connectionLimit: 30
