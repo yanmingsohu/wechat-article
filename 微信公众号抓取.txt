@@ -8,6 +8,8 @@ https://github.com/wuchangming/node-mitmproxy
 https://www.chenwenguan.com/wechat-browse-automation/
 
 https://zhuanlan.zhihu.com/p/24302048
+https://imququ.com/post/web-proxy-2.html
+https://www.jianshu.com/p/2fd23a9ecec4
 
 
 
