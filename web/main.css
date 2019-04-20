@@ -47,6 +47,7 @@ dialog .handle {
 
 table {
     font-size: 10px;
+    word-break: break-all;
 }
 
 table td {
