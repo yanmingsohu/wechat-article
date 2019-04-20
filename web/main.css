@@ -1,0 +1,80 @@
+.screen_center {
+    margin: auto;
+    margin-top: 15%;
+}
+
+input {
+    border-width: 0 0 1px 0;
+    border-color: #333;
+}
+
+.thick_border {
+    padding: 50px 90px;
+}
+
+dialog {
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #999;
+    box-shadow:0px 0px 8px #777;
+    margin: 20px;
+}
+
+dialog .handle {
+    transition: background-color 300ms;
+    background-color: #ccc;
+    border-radius: 5px;
+    width: 100%;
+    height: 25px;
+    cursor: move;
+    font-size: 8px;
+}
+
+.handle.catch {
+    transition: background-color 300ms;
+    background-color: #eee;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: #111;
+    display: block;
+}
+
+.buttons a:hover {
+    border-bottom: 1px solid #111;
+}
+
+table {
+    font-size: 10px;
+}
+
+table td {
+    border-bottom: 1px solid #aaa;
+    border-right: 1px solid #eee;
+    min-width: 50px;
+    padding: 5px 10px;
+}
+
+blank {
+    display: block;
+    height: 20px;
+}
+
+.search_section {
+    margin: 20px 90px;
+    font-size: 10px;
+}
+
+iframe {
+    border: 0;
+    width: 100%;
+    min-height: 600px;
+}
+
+.close {
+    display: inline-block;
+    padding: 3px 10px 3px 10px;
+    cursor: pointer !important;
+    float: right;
+}

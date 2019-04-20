@@ -10,7 +10,15 @@ https://www.chenwenguan.com/wechat-browse-automation/
 https://zhuanlan.zhihu.com/p/24302048
 https://imququ.com/post/web-proxy-2.html
 https://www.jianshu.com/p/2fd23a9ecec4
+http://www.phpue.com/wechat/wechat-account1.html
 
+
+参数分析:
+
+header: cookie/'q-ua2'/'q-guid'/'q-auth'
+pass_ticket: 隔段时间改变,所有请求统一
+cookie/wap_sid2: 隔段时间改变,每个公众号不同
+X-WECHAT-KEY: 隔段时间改变,每个公众号不同
 
 
 测试url:
@@ -30,7 +38,6 @@ Accept: application/json
 
 有参数 &action=appmsg_list&f=json 表示获取内容列表, 否则显示html模板()
 
-header: cookie/'q-ua2'/'q-guid'/'q-auth'
 
 
 https://mp.weixin.qq.com/mp/getmasssendmsg?__biz=MzA3NTcwOTIwNg==

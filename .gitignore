@@ -1,4 +1,5 @@
 */.svn/*
+.vs/**
 **/node_modules/**
 **/db_buffer/**
 *.jar
