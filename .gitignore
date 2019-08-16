@@ -24,3 +24,5 @@
 **/build/**
 cert
 *-lock.json
+
+sql/all.sql
